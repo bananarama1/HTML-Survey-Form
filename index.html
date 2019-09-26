@@ -22,13 +22,73 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  Hello World!
+
+  <h1 id="title">Survey-Form</h1>
+  <main id="main">
+    <p id="description">
+      Do you know what the Sum of the first 1000 numbers starting by 1
+      is? Give us your guess below and we will provide you with more
+      information by sending you information about the solution of this
+      problem.
+    </p>
+
+    <form id="survey-form">
+      <div id="input-div">
+        <label for="name" id="name-label">Name: <input required id="name" name="name" type="text" placeholder="Enter your name"/></label>
+        <label for="email" id="email-label">Email: <input required id="email" name="email" type="email" placeholder="Enter valid E-Mail adress" /></label>
+        <label for="number" id="number-label">Answer: <input required id="number" name="number" type="number" min="1" max="1000000" placeholder="Enter your guessed Solution"</label>
+      </div>
+      <div id="dropdown-div">
+        <p>
+          How did you get your answer?
+        </p>
+        <select required id="dropdown">
+          <option value="Calculated in Head">Calculated in Head</option>
+          <option value="Guessed Randomly">Guessed Randomly</option>
+          <option value="Used Mathematical Series">Used Mathematical Series</option>
+          <option value="Different Way">Different Way</option>
+        </select>
+      </div>
+
+      <div id="evaluation-div">
+        <p>
+          How did you like this little Test?
+        </p>
+        <label for="rb1_good"><input id="rb1_good" value="good" name="rb1" type="radio"/>Good</label>
+        <label for="rb1_ok"><input id="rb1_ok" value="ok" name="rb1" type="radio"/>OK</label>
+        <label for="rb1_bad"><input id="rb1_bad" value="bad" name="rb1" type="radio"/>Bad</label>
+
+        <p>
+          What topics would you apreciate in upcoming Surveys?
+          <label for="cb1_Riddle"><input id="cb1_Riddle" value="riddle" type="checkbox" />Riddles</label>
+          <label for="cb1_Integral"><input id="cb1_Integral" value="integral" type="checkbox" />Integrals</label>
+        </p>
+
+        <p>
+          Leave any additional comments below:
+        </p>
+        <textarea name="comments" rows="5" cols="50"></textarea>
+      </div>
+
+      <label for="submit"><input id="submit" type="submit" /></label>
+
+
+    </form>
+  </main>
+
+
+
+
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- Skript to run the freecodecamp Tests-->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
